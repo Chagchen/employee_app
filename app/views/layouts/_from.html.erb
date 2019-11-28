@@ -1,0 +1,64 @@
+<div class='row justify-content-center'>
+  <div class='col-md-8'>
+    <%= form_with(model: @employee, local: true ) do |f| %>
+      <div class="form-group">
+        <div class="control-label col-sm-2">
+          <%= f.label :name %>
+        </div>
+        <div class="col">
+          <%= f.text_field :name, class: "form-control", autofocus: true %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-sm-2">
+          <%= f.label :email %>
+        </div>
+        <div class="col">
+          <%= f.email_field :email, class: "form-control" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-md-8">
+          <%= f.label :position %>
+        </div>
+        <div class="col">
+          <%= f.text_field :position, class: "form-control" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-md-8">
+          <%= f.label :phone_number %>
+        </div>
+        <div class="col">
+          <%= f.text_field :phone_number, class: "form-control" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-sm-2">
+          <%= f.label :salary %>
+        </div>
+        <div class="col">
+          <%= f.text_field :salary, class: "form-control" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-md-8">
+          <%= f.label :date_hired %>
+        </div>
+        <div class="col">
+          <%= f.text_field :date_hired, class: "form-control" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="container">
+          <div class="row">
+            <nav class="blog-pagination col">
+              <%= f.submit "Save", class: "btn btn-outline-primary btn-md" %>
+              <%= link_to "Cancel", employees_path, class: "btn btn-outline-secondary btn-md" %>
+            </nav>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

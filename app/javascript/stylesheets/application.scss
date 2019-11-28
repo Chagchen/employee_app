@@ -1,0 +1,67 @@
+@import "~bootstrap/scss/bootstrap";
+
+.fonts {
+  font-family: 'Arial' !important;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: .3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card-box {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; 
+}
+.card {
+  width: 45%;
+  align-self: center; 
+}
+
+h4 {
+  font-weight: 525;
+  line-height: 1.5;
+}
+
+h5 {
+  font-weight: 525;
+}
+ 
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem; 
+  width: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+  justify-content: inherit;
+  padding-top: 0.6rem;
+}
+
+.container-fluid {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+ }
+
+ * {
+  box-sizing: border-box;
+ }
+ *:before,
+ *:after {
+  box-sizing: border-box;
+ }
+
+ html,
+ body {
+  height: 100%;
+  position: relative;
+ }
+ 

@@ -1,0 +1,20 @@
+<div class="card-box ">
+  <div class="card mt-6">
+    <div class="card-header">
+      <h4>Employee Information</h4>
+    </div>
+    <div class="card-body">
+      <%= form_with(model: @employee, remote: true ) do |f| %>
+        <h5 class="card-title"><%= @employee.name %></h5>
+        <p> 
+          <h6 class="card-text">Email: <%=  @employee.email %></h6>
+          <h6 class="card-text">Position: <%= @employee.position %></h6>
+          <h6 class="card-text">Phone: <%= @employee.phone_number %></h6>
+          <h6 class="card-text">Salary: <%= @employee.salary %></h6>
+          <h6 class="card-text">Date Hired: <%= @employee.date_hired %></h6>
+        </p>
+      <% end %>
+      <%= link_to "Home", employees_path, class: "btn btn-outline-success btn-md" %>
+    </div>
+  </div>
+</div>
