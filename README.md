@@ -14,6 +14,8 @@ Employee Management App
 
 * Changes that can be made but were not part of the assignment:
 
+* Added test: Rspec, factory_bot,
+
 Validation for email, salary field, date field, phone number as curently they strings now. (Email asks for the @ symbol, but no further vaildation as of now).
 Login functions were not part of the assignment. 
 Navbar can be edited for furture use and added function, also search data functions. 
